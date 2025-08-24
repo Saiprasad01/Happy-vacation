@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Vacation logo icon">
+  <title>Vacation Logo Icon</title>
+  <defs>
+    <clipPath id="clip">
+      <circle cx="256" cy="256" r="216"/>
+    </clipPath>
+  </defs>
+  <!-- Circle boundary -->
+  <circle cx="256" cy="256" r="232" fill="none" stroke="#2E7D32" stroke-width="32"/>
+  <g clip-path="url(#clip)" fill="#2E7D32">
+    <!-- Palm tree trunk -->
+    <path d="M280 512c-10-110-20-190-10-250 5-30 20-60 30-80-40 15-70 55-85 95-18 48-12 106-3 235z"/>
+    <!-- Palm leaves -->
+    <path d="M280 218c45-25 90-30 128-16-16-38-60-62-116-54 24-26 30-50 22-74-26 16-44 40-50 68-10-30-30-50-64-62 6 26 20 50 48 68-44-6-84 8-108 36 46-2 90 6 140 34z"/>
+    <!-- Island -->
+    <path d="M-20 384c70-34 150-52 240-52s170 18 240 52v64H-20z"/>
+    <!-- Waves -->
+    <path d="M-20 420c60 0 120-24 180-24s120 24 180 24 120-24 180-24v36H-20z"/>
+    <!-- Sun -->
+    <circle cx="356" cy="168" r="56" fill="#2E7D32" opacity="0.25"/>
+  </g>
+</svg>

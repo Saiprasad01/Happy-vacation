@@ -1,0 +1,33 @@
+.navbar{
+    border: 1px solid var(--border-gray);
+    display: flex;
+    gap: 2rem;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 3.5rem;
+    width: 100vw;
+}
+.brandLogo {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 1rem;
+    gap: 0.5rem;
+}
+.brandLogo img{
+  height: 3rem;
+  width: 3rem;    
+}
+.brandName{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2E7D32
+}
+.header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
