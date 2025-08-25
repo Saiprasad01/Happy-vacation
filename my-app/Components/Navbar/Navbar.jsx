@@ -11,11 +11,10 @@ const Navbar = () => {
           {/* <img src="./happyvacation.png" alt="Logo" className="h-8 w-8"/> */}
           <div className={styles.brandName}>JoyTrip</div>
         </div>
-        <Link href="/">Dashboard</Link>
-        <Link href="/localtransport">Local Transport</Link>
-        <Link href="/attractions">Attraction</Link>
-        <Link href="/food">Food</Link>
-        <Link href="/itinerary">Itinerary</Link>
+        <div className={styles.navLinks}>
+          <div>Profile</div>
+          <div className={styles.circle}>YP</div>
+        </div>
       </nav>
     </header>
   );

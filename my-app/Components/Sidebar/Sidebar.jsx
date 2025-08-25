@@ -10,7 +10,9 @@ import {
   MapPin, 
   Utensils, 
   Send, 
-  Settings 
+  Settings, 
+  ToggleRight,
+  ToggleLeft
 } from 'lucide-react';
 
 export default function Sidebar() {
@@ -54,12 +56,18 @@ export default function Sidebar() {
       badge: null 
     },
   ];
-
+  const rightToggle = ToggleRight;
+  const leftToggle = ToggleLeft;
+  const [isOpen, setIsOpen] = useState(true);
+  const TogglerIcon = isOpen ? leftToggle : rightToggle;
   return (
-    <aside className={styles.sidebar}>      
+    <aside className={styles.sidebar}> 
+      <div onClick={()=>setIsOpen(!isOpen)} className={styles.toggler}>
+        <TogglerIcon className={styles.togglerIcon} />
+      </div>     
       <nav className={styles.navMenu}>
         {menuItems.map((item) => {
-          const Icon = item.icon;
+          const Image = item.icon;
           return (
             <Link
               key={item.name}
@@ -70,13 +78,10 @@ export default function Sidebar() {
               // className={`styles.nav-item ${item.active ? 'styles.active' : ''}`}
               className={`${styles['navItem']} ${activeTab == item.href ? styles.active : ''}`}
             >
-              <Icon className={styles.navIcon} />
-              <span className={styles.navText}>{item.name}</span>
-              {item.badge && (
-                <span className={styles.navBadge}>
-                  {item.badge}
-                </span>
-              )}
+              <Image className={styles.navIcon} />
+              {isOpen && 
+                  <span className={styles.navText}>{item.name}</span>
+              }
             </Link>
           );
         })}
